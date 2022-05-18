@@ -1,0 +1,17 @@
+    
+  {{#if productos}}
+  <ul>
+  {{#each productos}}
+    <li>{{title}} ${{price}} <img src={{thumbnail}} width="70" height="70"> </li>
+
+  {{/each}}
+  
+  </ul>
+  {{else}}
+  <h1>No hay productos</h1>  
+  {{/if}}
+  
+
+<form action="/" method="GET">
+  <input type="submit" value="Ir a Formulario">
+</form>
